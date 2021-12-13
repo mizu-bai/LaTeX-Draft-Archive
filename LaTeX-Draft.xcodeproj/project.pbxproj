@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3325D152FE53ABC2FCA7B8CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325DE22E21C9AF886B0A029 /* ContentView.swift */; };
+		3325D47AAB81D9D4465D3B36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3325D67ED7F9BC7DD0072CCC /* Assets.xcassets */; };
+		3325D71AEE8C184A2B8CDEC8 /* MathUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325D223141ABE80B9B85E85 /* MathUILabel.swift */; };
+		3325D8C3605AEC0599019B35 /* LaTeX_DraftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325DFF87792735042256075 /* LaTeX_DraftTests.swift */; };
+		3325DBD056D3FA274495E297 /* LaTeX_DraftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325D2A3D400471EDC4CCDE1 /* LaTeX_DraftApp.swift */; };
+		3325DD3A29B17BB73EED9DC3 /* LaTeX_DraftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325D130CD0CE34A8205F41E /* LaTeX_DraftUITests.swift */; };
+		3325DE63794B961DDC829169 /* LaTeX_DraftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325D1CB6BE658AB6FCD697E /* LaTeX_DraftUITestsLaunchTests.swift */; };
+		3325DEF585255121B00F4A9A /* MathUILabelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325D843AA144DAE16F86735 /* MathUILabelModel.swift */; };
+		3325DF608A1D726F2243211C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3325DE87197745C537222BDA /* Preview Assets.xcassets */; };
+		5260EB5BC6229E970896E118 /* Pods_LaTeX_Draft_LaTeX_DraftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E61FBDBF5E81BC2C4A2BD69 /* Pods_LaTeX_Draft_LaTeX_DraftUITests.framework */; };
+		994B2E3611128432750698E0 /* Pods_LaTeX_DraftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6B5694593E90D32798BABA /* Pods_LaTeX_DraftTests.framework */; };
+		DD7424C3E850D9CAB727E72A /* Pods_LaTeX_Draft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB0BCF29948F19A59C3BA2D /* Pods_LaTeX_Draft.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3325D6EE395A4A9EFBA8E710 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3325DFF690866184AF59ECBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3325DF694BDA7DCF09181773;
+			remoteInfo = "LaTeX-Draft";
+		};
+		3325D8A5DE06AD9CA22545CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3325DFF690866184AF59ECBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3325DF694BDA7DCF09181773;
+			remoteInfo = "LaTeX-Draft";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1410D94C8C02CFE4FC716C5E /* Pods-LaTeX-Draft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeX-Draft.debug.xcconfig"; path = "Target Support Files/Pods-LaTeX-Draft/Pods-LaTeX-Draft.debug.xcconfig"; sourceTree = "<group>"; };
+		1F2681B11979B6CD75B17B8B /* Pods-LaTeX-Draft-LaTeX-DraftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeX-Draft-LaTeX-DraftUITests.release.xcconfig"; path = "Target Support Files/Pods-LaTeX-Draft-LaTeX-DraftUITests/Pods-LaTeX-Draft-LaTeX-DraftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		27CA81334803C5DD4BEFD2CA /* Pods-LaTeX-DraftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeX-DraftTests.debug.xcconfig"; path = "Target Support Files/Pods-LaTeX-DraftTests/Pods-LaTeX-DraftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E61FBDBF5E81BC2C4A2BD69 /* Pods_LaTeX_Draft_LaTeX_DraftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaTeX_Draft_LaTeX_DraftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3325D130CD0CE34A8205F41E /* LaTeX_DraftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaTeX_DraftUITests.swift; sourceTree = "<group>"; };
+		3325D1CA731C0E841377AE73 /* LaTeX-DraftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LaTeX-DraftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3325D1CB6BE658AB6FCD697E /* LaTeX_DraftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaTeX_DraftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3325D223141ABE80B9B85E85 /* MathUILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathUILabel.swift; sourceTree = "<group>"; };
+		3325D2A3D400471EDC4CCDE1 /* LaTeX_DraftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaTeX_DraftApp.swift; sourceTree = "<group>"; };
+		3325D4E3FBCBCF397CD92F55 /* LaTeX-DraftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LaTeX-DraftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3325D67ED7F9BC7DD0072CCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3325D843AA144DAE16F86735 /* MathUILabelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathUILabelModel.swift; sourceTree = "<group>"; };
+		3325D9168050922DAD33C9DE /* LaTeX-Draft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LaTeX-Draft.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3325DE22E21C9AF886B0A029 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3325DE87197745C537222BDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3325DFF87792735042256075 /* LaTeX_DraftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaTeX_DraftTests.swift; sourceTree = "<group>"; };
+		3C6CAD49C72CEE759222FFEE /* Pods-LaTeX-Draft-LaTeX-DraftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeX-Draft-LaTeX-DraftUITests.debug.xcconfig"; path = "Target Support Files/Pods-LaTeX-Draft-LaTeX-DraftUITests/Pods-LaTeX-Draft-LaTeX-DraftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		54182A32A0FA6F6286BCF6DB /* Pods-LaTeX-Draft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeX-Draft.release.xcconfig"; path = "Target Support Files/Pods-LaTeX-Draft/Pods-LaTeX-Draft.release.xcconfig"; sourceTree = "<group>"; };
+		63C1C3CC27664ADB00742F9C /* LaTeX-Draft-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LaTeX-Draft-Bridging-Header.h"; sourceTree = "<group>"; };
+		6D6B5694593E90D32798BABA /* Pods_LaTeX_DraftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaTeX_DraftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C18892AE1D98835C0307FE /* Pods-LaTeX-DraftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeX-DraftTests.release.xcconfig"; path = "Target Support Files/Pods-LaTeX-DraftTests/Pods-LaTeX-DraftTests.release.xcconfig"; sourceTree = "<group>"; };
+		CAB0BCF29948F19A59C3BA2D /* Pods_LaTeX_Draft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaTeX_Draft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3325D0B78C2F69DA4FC5EB2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5260EB5BC6229E970896E118 /* Pods_LaTeX_Draft_LaTeX_DraftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3325D305DA7AF8FB7DE79EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7424C3E850D9CAB727E72A /* Pods_LaTeX_Draft.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3325DA0986D1B2071C4B2DF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994B2E3611128432750698E0 /* Pods_LaTeX_DraftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3325D532443CA27D4EA2EEFE = {
+			isa = PBXGroup;
+			children = (
+				3325DBB1DFE42C12D464AF8A /* Products */,
+				3325DB8CB453739BF80DA011 /* LaTeX-Draft */,
+				3325D8E161FF3C5E44D675AF /* LaTeX-DraftTests */,
+				3325D768368586E6ABDA9D61 /* LaTeX-DraftUITests */,
+				551526DCB8141CF0ED13A6FA /* Pods */,
+				FABBEFDDD5945B5D859FA5D0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3325D5655C4B9E9F3D91ADA6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3325DE87197745C537222BDA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3325D768368586E6ABDA9D61 /* LaTeX-DraftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3325D130CD0CE34A8205F41E /* LaTeX_DraftUITests.swift */,
+				3325D1CB6BE658AB6FCD697E /* LaTeX_DraftUITestsLaunchTests.swift */,
+			);
+			path = "LaTeX-DraftUITests";
+			sourceTree = "<group>";
+		};
+		3325D8E161FF3C5E44D675AF /* LaTeX-DraftTests */ = {
+			isa = PBXGroup;
+			children = (
+				3325DFF87792735042256075 /* LaTeX_DraftTests.swift */,
+				3325D223141ABE80B9B85E85 /* MathUILabel.swift */,
+			);
+			path = "LaTeX-DraftTests";
+			sourceTree = "<group>";
+		};
+		3325DB8CB453739BF80DA011 /* LaTeX-Draft */ = {
+			isa = PBXGroup;
+			children = (
+				3325D67ED7F9BC7DD0072CCC /* Assets.xcassets */,
+				3325D5655C4B9E9F3D91ADA6 /* Preview Content */,
+				3325D2A3D400471EDC4CCDE1 /* LaTeX_DraftApp.swift */,
+				3325DE22E21C9AF886B0A029 /* ContentView.swift */,
+				63C1C3CC27664ADB00742F9C /* LaTeX-Draft-Bridging-Header.h */,
+				3325D843AA144DAE16F86735 /* MathUILabelModel.swift */,
+			);
+			path = "LaTeX-Draft";
+			sourceTree = "<group>";
+		};
+		3325DBB1DFE42C12D464AF8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3325D9168050922DAD33C9DE /* LaTeX-Draft.app */,
+				3325D4E3FBCBCF397CD92F55 /* LaTeX-DraftTests.xctest */,
+				3325D1CA731C0E841377AE73 /* LaTeX-DraftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		551526DCB8141CF0ED13A6FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1410D94C8C02CFE4FC716C5E /* Pods-LaTeX-Draft.debug.xcconfig */,
+				54182A32A0FA6F6286BCF6DB /* Pods-LaTeX-Draft.release.xcconfig */,
+				3C6CAD49C72CEE759222FFEE /* Pods-LaTeX-Draft-LaTeX-DraftUITests.debug.xcconfig */,
+				1F2681B11979B6CD75B17B8B /* Pods-LaTeX-Draft-LaTeX-DraftUITests.release.xcconfig */,
+				27CA81334803C5DD4BEFD2CA /* Pods-LaTeX-DraftTests.debug.xcconfig */,
+				A7C18892AE1D98835C0307FE /* Pods-LaTeX-DraftTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FABBEFDDD5945B5D859FA5D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAB0BCF29948F19A59C3BA2D /* Pods_LaTeX_Draft.framework */,
+				2E61FBDBF5E81BC2C4A2BD69 /* Pods_LaTeX_Draft_LaTeX_DraftUITests.framework */,
+				6D6B5694593E90D32798BABA /* Pods_LaTeX_DraftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3325D4BC484B5451FE7A023C /* LaTeX-DraftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3325D3DB05D7F5406A82A82E /* Build configuration list for PBXNativeTarget "LaTeX-DraftUITests" */;
+			buildPhases = (
+				A6D8ACE65C7D7853786EC489 /* [CP] Check Pods Manifest.lock */,
+				3325D9DAE506592E5E56DC70 /* Sources */,
+				3325D0B78C2F69DA4FC5EB2C /* Frameworks */,
+				3325D94C2AFD531346345817 /* Resources */,
+				7A4CAF55D8557E35B6D13C21 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3325D281ECC3AE79D6FAC53F /* PBXTargetDependency */,
+			);
+			name = "LaTeX-DraftUITests";
+			productName = "LaTeX-DraftUITests";
+			productReference = 3325D1CA731C0E841377AE73 /* LaTeX-DraftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3325D999807FFBBDE24E6F3F /* LaTeX-DraftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3325DF71E30ED1C00AFACD75 /* Build configuration list for PBXNativeTarget "LaTeX-DraftTests" */;
+			buildPhases = (
+				FBD3E0A8B9C30995D1841D88 /* [CP] Check Pods Manifest.lock */,
+				3325D61815CBED9F98E515E0 /* Sources */,
+				3325DA0986D1B2071C4B2DF1 /* Frameworks */,
+				3325D8CAC97FB53B0385979E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3325DFF94584C8F720BC3A44 /* PBXTargetDependency */,
+			);
+			name = "LaTeX-DraftTests";
+			productName = "LaTeX-DraftTests";
+			productReference = 3325D4E3FBCBCF397CD92F55 /* LaTeX-DraftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3325DF694BDA7DCF09181773 /* LaTeX-Draft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3325D6198A5AF8688F326207 /* Build configuration list for PBXNativeTarget "LaTeX-Draft" */;
+			buildPhases = (
+				755D3CCB72A2D9509EC00BF4 /* [CP] Check Pods Manifest.lock */,
+				3325D571F0058CA03AEC84E8 /* Sources */,
+				3325D305DA7AF8FB7DE79EC3 /* Frameworks */,
+				3325DCF877C18B5893AFB2D3 /* Resources */,
+				EE5563041320C1B15C76AB58 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LaTeX-Draft";
+			productName = "LaTeX-Draft";
+			productReference = 3325D9168050922DAD33C9DE /* LaTeX-Draft.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3325DFF690866184AF59ECBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					3325DF694BDA7DCF09181773 = {
+						LastSwiftMigration = 1310;
+					};
+				};
+			};
+			buildConfigurationList = 3325D0771F6FF80AADA9AF83 /* Build configuration list for PBXProject "LaTeX-Draft" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 3325D532443CA27D4EA2EEFE;
+			productRefGroup = 3325DBB1DFE42C12D464AF8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3325DF694BDA7DCF09181773 /* LaTeX-Draft */,
+				3325D999807FFBBDE24E6F3F /* LaTeX-DraftTests */,
+				3325D4BC484B5451FE7A023C /* LaTeX-DraftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3325D8CAC97FB53B0385979E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3325D94C2AFD531346345817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3325DCF877C18B5893AFB2D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3325D47AAB81D9D4465D3B36 /* Assets.xcassets in Resources */,
+				3325DF608A1D726F2243211C /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		755D3CCB72A2D9509EC00BF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LaTeX-Draft-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A4CAF55D8557E35B6D13C21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LaTeX-Draft-LaTeX-DraftUITests/Pods-LaTeX-Draft-LaTeX-DraftUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/iosMath/iosMath.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iosMath.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LaTeX-Draft-LaTeX-DraftUITests/Pods-LaTeX-Draft-LaTeX-DraftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6D8ACE65C7D7853786EC489 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LaTeX-Draft-LaTeX-DraftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE5563041320C1B15C76AB58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LaTeX-Draft/Pods-LaTeX-Draft-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/iosMath/iosMath.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iosMath.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LaTeX-Draft/Pods-LaTeX-Draft-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBD3E0A8B9C30995D1841D88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LaTeX-DraftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3325D571F0058CA03AEC84E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3325DBD056D3FA274495E297 /* LaTeX_DraftApp.swift in Sources */,
+				3325D152FE53ABC2FCA7B8CE /* ContentView.swift in Sources */,
+				3325D71AEE8C184A2B8CDEC8 /* MathUILabel.swift in Sources */,
+				3325DEF585255121B00F4A9A /* MathUILabelModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3325D61815CBED9F98E515E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3325D8C3605AEC0599019B35 /* LaTeX_DraftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3325D9DAE506592E5E56DC70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3325DD3A29B17BB73EED9DC3 /* LaTeX_DraftUITests.swift in Sources */,
+				3325DE63794B961DDC829169 /* LaTeX_DraftUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3325D281ECC3AE79D6FAC53F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3325DF694BDA7DCF09181773 /* LaTeX-Draft */;
+			targetProxy = 3325D8A5DE06AD9CA22545CE /* PBXContainerItemProxy */;
+		};
+		3325DFF94584C8F720BC3A44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3325DF694BDA7DCF09181773 /* LaTeX-Draft */;
+			targetProxy = 3325D6EE395A4A9EFBA8E710 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3325D690D75DA5408C536962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3325D7E5051D91D31C1A1EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F2681B11979B6CD75B17B8B /* Pods-LaTeX-Draft-LaTeX-DraftUITests.release.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.LaTeX-DraftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LaTeX-Draft";
+			};
+			name = Release;
+		};
+		3325D86E39708C01EE2A90B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7C18892AE1D98835C0307FE /* Pods-LaTeX-DraftTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LaTeX-Draft.app/LaTeX-Draft";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.LaTeX-DraftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		3325D94540B4F340336F3E1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1410D94C8C02CFE4FC716C5E /* Pods-LaTeX-Draft.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LaTeX-Draft/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.LaTeX-Draft";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LaTeX-Draft/LaTeX-Draft-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3325D996109C326952CCC673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27CA81334803C5DD4BEFD2CA /* Pods-LaTeX-DraftTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LaTeX-Draft.app/LaTeX-Draft";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.LaTeX-DraftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		3325DC70DC6A238F2579683B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54182A32A0FA6F6286BCF6DB /* Pods-LaTeX-Draft.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LaTeX-Draft/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.LaTeX-Draft";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LaTeX-Draft/LaTeX-Draft-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3325DED6E7AB6912AA5772ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3325DF01342E5E1B7A6C4BA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C6CAD49C72CEE759222FFEE /* Pods-LaTeX-Draft-LaTeX-DraftUITests.debug.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.LaTeX-DraftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LaTeX-Draft";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3325D0771F6FF80AADA9AF83 /* Build configuration list for PBXProject "LaTeX-Draft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3325D690D75DA5408C536962 /* Debug */,
+				3325DED6E7AB6912AA5772ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3325D3DB05D7F5406A82A82E /* Build configuration list for PBXNativeTarget "LaTeX-DraftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3325DF01342E5E1B7A6C4BA3 /* Debug */,
+				3325D7E5051D91D31C1A1EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3325D6198A5AF8688F326207 /* Build configuration list for PBXNativeTarget "LaTeX-Draft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3325D94540B4F340336F3E1D /* Debug */,
+				3325DC70DC6A238F2579683B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3325DF71E30ED1C00AFACD75 /* Build configuration list for PBXNativeTarget "LaTeX-DraftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3325D996109C326952CCC673 /* Debug */,
+				3325D86E39708C01EE2A90B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3325DFF690866184AF59ECBF /* Project object */;
+}
