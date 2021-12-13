@@ -11,4 +11,4 @@ So I will write one in hommage to *LaTeX Help* and name it *LaTeX Draft*.
 
 ## Acknowledgement
 
-- iosMath
+- [iosMath](https://github.com/kostub/iosMath)
