@@ -124,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				3325DFF87792735042256075 /* LaTeX_DraftTests.swift */,
-				3325D223141ABE80B9B85E85 /* MathUILabel.swift */,
 			);
 			path = "LaTeX-DraftTests";
 			sourceTree = "<group>";
@@ -136,8 +135,9 @@
 				3325D5655C4B9E9F3D91ADA6 /* Preview Content */,
 				3325D2A3D400471EDC4CCDE1 /* LaTeX_DraftApp.swift */,
 				3325DE22E21C9AF886B0A029 /* ContentView.swift */,
-				63C1C3CC27664ADB00742F9C /* LaTeX-Draft-Bridging-Header.h */,
 				3325D843AA144DAE16F86735 /* MathUILabelModel.swift */,
+				3325D223141ABE80B9B85E85 /* MathUILabel.swift */,
+				63C1C3CC27664ADB00742F9C /* LaTeX-Draft-Bridging-Header.h */,
 			);
 			path = "LaTeX-Draft";
 			sourceTree = "<group>";

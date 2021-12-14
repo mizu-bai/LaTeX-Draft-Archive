@@ -12,6 +12,9 @@ struct ContentView: View {
     @State private var latex: String = "W = - \\int_{V_1}^{V_2} p \\mathrm{d} V"
     @ObservedObject var mathUILabelModel: MathUILabelModel = MathUILabelModel()
     @Environment(\.colorScheme) var colorScheme
+    var isLight: Bool {
+        colorScheme == .light
+    }
 
     init() {
         UITextView.appearance().backgroundColor = .clear
@@ -20,11 +23,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             MathUILabel($latex)
-                    .labelMode(mathUILabelModel.labelMode)
-                    .textAlignment(mathUILabelModel.textAlignment)
-                    .fontSize(mathUILabelModel.fontSize)
-                    .font(mathUILabelModel.font)
-                    .textColor(mathUILabelModel.textColor)
+                    .labelModel(mathUILabelModel)
                     .padding()
             HStack {
                 Text("Display style: ")
@@ -39,7 +38,7 @@ struct ContentView: View {
                 }.padding()
             }.padding()
             TextEditor(text: $latex)
-                    .background(Color(colorScheme == .light ? .lightGray : .darkGray))
+                    .background(Color(isLight ? .lightGray : .darkGray))
                     .padding()
         }
     }
