@@ -18,6 +18,9 @@ struct ContentView: View {
 
     init() {
         UITextView.appearance().backgroundColor = .clear
+        mathUILabelModel.textColor = UIColor { (trainCollection) -> UIColor in
+            trainCollection.userInterfaceStyle == .light ? .black : .white
+        }
     }
 
     var body: some View {
