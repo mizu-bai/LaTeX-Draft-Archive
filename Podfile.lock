@@ -1,16 +1,20 @@
 PODS:
   - iosMath (0.9.4)
+  - UIColor_Hex_Swift (5.1.7)
 
 DEPENDENCIES:
   - iosMath
+  - UIColor_Hex_Swift (~> 5.1.7)
 
 SPEC REPOS:
   trunk:
     - iosMath
+    - UIColor_Hex_Swift
 
 SPEC CHECKSUMS:
   iosMath: f7a6cbadf9d836d2149c2a84c435b1effc244cba
+  UIColor_Hex_Swift: 31cd3e47440f07a20d2503a36bb0437a445b3c29
 
-PODFILE CHECKSUM: 562bd13271ba0de64238de1733ff89c358807030
+PODFILE CHECKSUM: cd55ab79a65dbb103496701fe0c3a044bcf00c32
 
 COCOAPODS: 1.11.2

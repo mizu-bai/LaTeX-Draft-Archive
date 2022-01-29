@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3325D152FE53ABC2FCA7B8CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325DE22E21C9AF886B0A029 /* ContentView.swift */; };
 		3325D47AAB81D9D4465D3B36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3325D67ED7F9BC7DD0072CCC /* Assets.xcassets */; };
+		3325D559F49EF3721508649F /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325D5C9D0D01D3C80352328 /* EditorView.swift */; };
+		3325D703FBCBB2BDA6E933C9 /* EditorThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325D4012479B543E51366E6 /* EditorThemeModel.swift */; };
 		3325D71AEE8C184A2B8CDEC8 /* MathUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325D223141ABE80B9B85E85 /* MathUILabel.swift */; };
 		3325D8C3605AEC0599019B35 /* LaTeX_DraftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325DFF87792735042256075 /* LaTeX_DraftTests.swift */; };
 		3325DBD056D3FA274495E297 /* LaTeX_DraftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325D2A3D400471EDC4CCDE1 /* LaTeX_DraftApp.swift */; };
@@ -16,7 +18,11 @@
 		3325DE63794B961DDC829169 /* LaTeX_DraftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325D1CB6BE658AB6FCD697E /* LaTeX_DraftUITestsLaunchTests.swift */; };
 		3325DEF585255121B00F4A9A /* MathUILabelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3325D843AA144DAE16F86735 /* MathUILabelModel.swift */; };
 		3325DF608A1D726F2243211C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3325DE87197745C537222BDA /* Preview Assets.xcassets */; };
+		3325DFA16E1FA0F67A11A83D /* editor_theme_default.json in Resources */ = {isa = PBXBuildFile; fileRef = 3325DCB420D61BA8D4DE12F3 /* editor_theme_default.json */; };
 		5260EB5BC6229E970896E118 /* Pods_LaTeX_Draft_LaTeX_DraftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E61FBDBF5E81BC2C4A2BD69 /* Pods_LaTeX_Draft_LaTeX_DraftUITests.framework */; };
+		6372CBD527A2FC7D00D72470 /* ReferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6372CBD427A2FC7D00D72470 /* ReferenceView.swift */; };
+		6372CBD727A3039000D72470 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6372CBD627A3039000D72470 /* InputTextView.swift */; };
+		6372CBD927A45A6200D72470 /* Menlo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6372CBD827A45A6200D72470 /* Menlo-Regular.ttf */; };
 		994B2E3611128432750698E0 /* Pods_LaTeX_DraftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6B5694593E90D32798BABA /* Pods_LaTeX_DraftTests.framework */; };
 		DD7424C3E850D9CAB727E72A /* Pods_LaTeX_Draft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB0BCF29948F19A59C3BA2D /* Pods_LaTeX_Draft.framework */; };
 /* End PBXBuildFile section */
@@ -48,15 +54,22 @@
 		3325D1CB6BE658AB6FCD697E /* LaTeX_DraftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaTeX_DraftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3325D223141ABE80B9B85E85 /* MathUILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathUILabel.swift; sourceTree = "<group>"; };
 		3325D2A3D400471EDC4CCDE1 /* LaTeX_DraftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaTeX_DraftApp.swift; sourceTree = "<group>"; };
+		3325D4012479B543E51366E6 /* EditorThemeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorThemeModel.swift; sourceTree = "<group>"; };
 		3325D4E3FBCBCF397CD92F55 /* LaTeX-DraftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LaTeX-DraftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3325D5C9D0D01D3C80352328 /* EditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 		3325D67ED7F9BC7DD0072CCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3325D843AA144DAE16F86735 /* MathUILabelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathUILabelModel.swift; sourceTree = "<group>"; };
 		3325D9168050922DAD33C9DE /* LaTeX-Draft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LaTeX-Draft.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3325DCB420D61BA8D4DE12F3 /* editor_theme_default.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = editor_theme_default.json; sourceTree = "<group>"; };
 		3325DE22E21C9AF886B0A029 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3325DE87197745C537222BDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3325DFF87792735042256075 /* LaTeX_DraftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaTeX_DraftTests.swift; sourceTree = "<group>"; };
 		3C6CAD49C72CEE759222FFEE /* Pods-LaTeX-Draft-LaTeX-DraftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeX-Draft-LaTeX-DraftUITests.debug.xcconfig"; path = "Target Support Files/Pods-LaTeX-Draft-LaTeX-DraftUITests/Pods-LaTeX-Draft-LaTeX-DraftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		54182A32A0FA6F6286BCF6DB /* Pods-LaTeX-Draft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeX-Draft.release.xcconfig"; path = "Target Support Files/Pods-LaTeX-Draft/Pods-LaTeX-Draft.release.xcconfig"; sourceTree = "<group>"; };
+		6372CBD427A2FC7D00D72470 /* ReferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceView.swift; sourceTree = "<group>"; };
+		6372CBD627A3039000D72470 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		6372CBD827A45A6200D72470 /* Menlo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Menlo-Regular.ttf"; sourceTree = "<group>"; };
+		6372CBDA27A45AF400D72470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		63C1C3CC27664ADB00742F9C /* LaTeX-Draft-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LaTeX-Draft-Bridging-Header.h"; sourceTree = "<group>"; };
 		6D6B5694593E90D32798BABA /* Pods_LaTeX_DraftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaTeX_DraftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7C18892AE1D98835C0307FE /* Pods-LaTeX-DraftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaTeX-DraftTests.release.xcconfig"; path = "Target Support Files/Pods-LaTeX-DraftTests/Pods-LaTeX-DraftTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,12 +144,14 @@
 		3325DB8CB453739BF80DA011 /* LaTeX-Draft */ = {
 			isa = PBXGroup;
 			children = (
+				6372CBDA27A45AF400D72470 /* Info.plist */,
+				6372CBD327A2FC6100D72470 /* ReferenceView */,
+				6372CBD227A2FA5D00D72470 /* EditorView */,
 				3325D67ED7F9BC7DD0072CCC /* Assets.xcassets */,
+				6372CBD827A45A6200D72470 /* Menlo-Regular.ttf */,
 				3325D5655C4B9E9F3D91ADA6 /* Preview Content */,
 				3325D2A3D400471EDC4CCDE1 /* LaTeX_DraftApp.swift */,
 				3325DE22E21C9AF886B0A029 /* ContentView.swift */,
-				3325D843AA144DAE16F86735 /* MathUILabelModel.swift */,
-				3325D223141ABE80B9B85E85 /* MathUILabel.swift */,
 				63C1C3CC27664ADB00742F9C /* LaTeX-Draft-Bridging-Header.h */,
 			);
 			path = "LaTeX-Draft";
@@ -163,6 +178,27 @@
 				A7C18892AE1D98835C0307FE /* Pods-LaTeX-DraftTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6372CBD227A2FA5D00D72470 /* EditorView */ = {
+			isa = PBXGroup;
+			children = (
+				3325D843AA144DAE16F86735 /* MathUILabelModel.swift */,
+				3325D223141ABE80B9B85E85 /* MathUILabel.swift */,
+				3325D5C9D0D01D3C80352328 /* EditorView.swift */,
+				6372CBD627A3039000D72470 /* InputTextView.swift */,
+				3325DCB420D61BA8D4DE12F3 /* editor_theme_default.json */,
+				3325D4012479B543E51366E6 /* EditorThemeModel.swift */,
+			);
+			name = EditorView;
+			sourceTree = "<group>";
+		};
+		6372CBD327A2FC6100D72470 /* ReferenceView */ = {
+			isa = PBXGroup;
+			children = (
+				6372CBD427A2FC7D00D72470 /* ReferenceView.swift */,
+			);
+			name = ReferenceView;
 			sourceTree = "<group>";
 		};
 		FABBEFDDD5945B5D859FA5D0 /* Frameworks */ = {
@@ -242,8 +278,10 @@
 		3325DFF690866184AF59ECBF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					3325DF694BDA7DCF09181773 = {
+						DevelopmentTeam = A525GA3USA;
 						LastSwiftMigration = 1310;
 					};
 				};
@@ -288,7 +326,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3325D47AAB81D9D4465D3B36 /* Assets.xcassets in Resources */,
+				6372CBD927A45A6200D72470 /* Menlo-Regular.ttf in Resources */,
 				3325DF608A1D726F2243211C /* Preview Assets.xcassets in Resources */,
+				3325DFA16E1FA0F67A11A83D /* editor_theme_default.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,10 +364,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LaTeX-Draft-LaTeX-DraftUITests/Pods-LaTeX-Draft-LaTeX-DraftUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/iosMath/iosMath.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iosMath.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,10 +406,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LaTeX-Draft/Pods-LaTeX-Draft-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/iosMath/iosMath.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iosMath.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,10 +448,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6372CBD727A3039000D72470 /* InputTextView.swift in Sources */,
 				3325DBD056D3FA274495E297 /* LaTeX_DraftApp.swift in Sources */,
 				3325D152FE53ABC2FCA7B8CE /* ContentView.swift in Sources */,
 				3325D71AEE8C184A2B8CDEC8 /* MathUILabel.swift in Sources */,
 				3325DEF585255121B00F4A9A /* MathUILabelModel.swift in Sources */,
+				6372CBD527A2FC7D00D72470 /* ReferenceView.swift in Sources */,
+				3325D559F49EF3721508649F /* EditorView.swift in Sources */,
+				3325D703FBCBB2BDA6E933C9 /* EditorThemeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +496,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -549,8 +598,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LaTeX-Draft/Preview Content\"";
+				DEVELOPMENT_TEAM = A525GA3USA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LaTeX-Draft/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,7 +609,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.LaTeX-Draft";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.01-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "LaTeX-Draft/LaTeX-Draft-Bridging-Header.h";
@@ -595,8 +646,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LaTeX-Draft/Preview Content\"";
+				DEVELOPMENT_TEAM = A525GA3USA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LaTeX-Draft/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -604,7 +657,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.LaTeX-Draft";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.01-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "LaTeX-Draft/LaTeX-Draft-Bridging-Header.h";
@@ -617,6 +670,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

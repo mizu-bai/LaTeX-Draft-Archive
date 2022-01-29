@@ -7,6 +7,7 @@ import iosMath
 
 struct MathUILabel: UIViewRepresentable {
     @Environment(\.colorScheme) var colorScheme
+
     @Binding var latex: String
     private var labelMode: MTMathUILabelMode   = .display
     private var textAlignment: MTTextAlignment = .left
@@ -30,7 +31,7 @@ struct MathUILabel: UIViewRepresentable {
     }
 
     init(_ latex: Binding<String>,
-            labelModel: MathUILabelModel = MathUILabelModel()
+         labelModel: MathUILabelModel = MathUILabelModel()
          ) {
         self._latex = latex
         self.labelModel = labelModel

@@ -7,6 +7,7 @@ target 'LaTeX-Draft' do
 
   # Pods for LaTeX-Draft
   pod 'iosMath'
+  pod 'UIColor_Hex_Swift', '~> 5.1.7'
 
   target 'LaTeX-DraftTests' do
     inherit! :search_paths

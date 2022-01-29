@@ -9,40 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var latex: String = "W = - \\int_{V_1}^{V_2} p \\mathrm{d} V"
-    @ObservedObject var mathUILabelModel: MathUILabelModel = MathUILabelModel()
-    @Environment(\.colorScheme) var colorScheme
-    var isLight: Bool {
-        colorScheme == .light
-    }
-
-    init() {
-        UITextView.appearance().backgroundColor = .clear
-        mathUILabelModel.textColor = UIColor { (trainCollection) -> UIColor in
-            trainCollection.userInterfaceStyle == .light ? .black : .white
-        }
-    }
-
     var body: some View {
-        VStack {
-            MathUILabel($latex)
-                    .labelModel(mathUILabelModel)
-                    .padding()
-            HStack {
-                Text("Display style: ")
-                        .padding()
-                Spacer()
-                Button(mathUILabelModel.labelMode == .display ? "Display" : "Inline") {
-                    if mathUILabelModel.labelMode == .display {
-                        mathUILabelModel.labelMode = .text
-                    } else {
-                        mathUILabelModel.labelMode = .display
-                    }
-                }.padding()
-            }.padding()
-            TextEditor(text: $latex)
-                    .background(Color(isLight ? .lightGray : .darkGray))
-                    .padding()
+        TabView {
+            EditorView()
+                .tabItem {
+                    Image(systemName: "pencil")
+                    Text("Editor")
+                }
+
+            ReferenceView()
+                .tabItem {
+                    Image(systemName: "tablecells")
+                    Text("Reference")
+                }
         }
     }
 }
