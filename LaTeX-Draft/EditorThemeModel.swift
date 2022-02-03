@@ -2,17 +2,17 @@
 // Created by mizu bai on 2022/1/29.
 //
 
-import Foundation
+import UIKit
 
-struct EditorThemeModel {
+struct EditorThemeModel: Codable {
     var themeName: String
     var fontName: String
     var fontSize: CGFloat
     var fontColorHex: String
-    var highlight: [HighlightModel]
+    var highlightRules: [HighlightModel]
 }
 
-struct HighlightModel {
+struct HighlightModel: Codable {
     var description: String
     var pattern: String
     var fontColorHex: String

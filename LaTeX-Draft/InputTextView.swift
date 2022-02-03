@@ -25,57 +25,29 @@ extension UITextView {
     @objc func doneButtonDidClick(button: UIBarButtonItem) {
         resignFirstResponder()
     }
-
-    @objc func insertRoot() {
-        text = text + "\\sqrt{}"
-    }
 }
 
 extension String {
-    func setSyntaxHighlight() -> NSMutableAttributedString {
+    func setSyntaxHighlight(with editorTheme: EditorThemeModel) -> NSMutableAttributedString {
 
         let attributedString = NSMutableAttributedString(string: self)
 
         attributedString.setAttributes(
                 [
-                    .font: UIFont(name: "Menlo-Regular", size: 16)!,
-                    .foregroundColor: UIColor.darkText,
+                    .font: UIFont(name: editorTheme.fontName, size: editorTheme.fontSize)!,
+                    .foregroundColor: UIColor(editorTheme.fontColorHex),
                 ],
                 range: NSRange(location: 0, length: count))
 
-        // TODO: waiting for rearrangement, use external json file for editor style
-        let rules: [[String: String]] = [
-            [
-                "pattern": "\\d+(\\.\\d+)?",
-                "fontColorHex": "#E74C3C",
-            ],
-            [
-                "pattern": "\\\\([a-zA-Z]+|\\||\\{|\\}|&|%|_|#|\\$|\\\\)",
-                "fontColorHex": "#7D3C98",
-            ],
-            [
-                "pattern": "(?<!\\\\)(\\{|\\})",
-                "fontColorHex": "#117A65",
-            ],
-            [
-                "pattern": "\\[|\\]",
-                "fontColorHex": "#A04000",
-            ],
-            [
-                "pattern": "\\(|\\)",
-                "fontColorHex": "#F1C40F",
-            ],
-        ]
-
         do {
-            for rule in rules {
-                let regularExpression = try NSRegularExpression(pattern: rule["pattern"]!)
+            for rule in editorTheme.highlightRules {
+                let regularExpression = try NSRegularExpression(pattern: rule.pattern)
                 let results = regularExpression.matches(in: self, range: NSRange(location: 0, length: count))
                 for item in results {
                     attributedString.setAttributes(
                             [
-                                .font: UIFont(name: "Menlo-Regular", size: 16)!,
-                                .foregroundColor: UIColor(rule["fontColorHex"]!)
+                                .font: UIFont(name: editorTheme.fontName, size: editorTheme.fontSize)!,
+                                .foregroundColor: UIColor(rule.fontColorHex)
                             ],
                             range: item.range)
                 }
@@ -93,6 +65,18 @@ struct InputTextView: UIViewRepresentable {
 
     @Binding var text: String
 
+    let editorTheme = {() -> EditorThemeModel in
+        let url = Bundle.main.url(forResource: "editor_theme_default", withExtension: "json")
+        let modelData = try! Data(contentsOf: url!)
+        let decoder = {() -> JSONDecoder in
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            return decoder
+        }()
+        let model = try! decoder.decode(EditorThemeModel.self, from: modelData)
+        return model
+    }()
+
     init(_ text: Binding<String>) {
         self._text = text
     }
@@ -106,12 +90,6 @@ struct InputTextView: UIViewRepresentable {
         inputTextView.autocorrectionType = .no
 
         inputTextView.toolBar([
-            UIBarButtonItem(
-                    title: "\\",
-                    style: .plain,
-                    target: inputTextView,
-                    action: #selector(UITextView.insertRoot)
-            ),
             UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
             UIBarButtonItem(
                     image: UIImage(systemName: "keyboard.chevron.compact.down"),
@@ -124,8 +102,10 @@ struct InputTextView: UIViewRepresentable {
 
     func updateUIView(_ textView: UITextView, context: Context) {
         let loc = textView.selectedRange.location
-        textView.attributedText = text.setSyntaxHighlight()
+        print(loc)
+        textView.attributedText = text.setSyntaxHighlight(with: editorTheme)
         textView.selectedRange = NSRange(location: loc,length: 0)
+        print(loc)
     }
 
     func makeCoordinator() -> Coordinator {
