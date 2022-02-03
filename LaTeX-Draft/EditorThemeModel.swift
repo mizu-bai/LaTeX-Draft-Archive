@@ -13,7 +13,7 @@ struct EditorThemeModel {
 }
 
 struct HighlightModel {
-    var name: String
+    var description: String
     var pattern: String
     var fontColorHex: String
 }

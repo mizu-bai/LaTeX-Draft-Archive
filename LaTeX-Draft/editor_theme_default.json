@@ -1,31 +1,31 @@
 {
-  "theme_name": "default",
-  "font_name": "Menlo-Regular",
+  "theme_description": "default",
+  "font_description": "Menlo-Regular",
   "font_size": 16,
   "font_color_hex": "",
   "highlight": [
     {
-      "name": "number",
+      "description": "number",
       "pattern": "\\d+(\\.\\d+)?",
       "font_color_hex": ""
     },
     {
-      "name": "command",
+      "description": "command",
       "pattern": "\\\\([a-zA-Z]+|\\||\\{|\\}|&|%|_|#|\\$|\\\\)",
       "font_color_hex": ""
     },
     {
-      "name": "curly_brackets",
+      "description": "curly_brackets",
       "pattern": "(?<!\\\\)(\\{|\\})",
       "font_color_hex": ""
     },
     {
-      "name": "square_brackets",
+      "description": "square_brackets",
       "pattern": "\\[|\\]",
       "font_color_hex": ""
     },
     {
-      "name": "parentheses",
+      "description": "parentheses",
       "pattern": "\\(|\\)",
       "font_color_hex": ""
     }
